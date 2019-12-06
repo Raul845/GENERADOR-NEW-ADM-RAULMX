@@ -10,7 +10,6 @@ PGet.py
 dropbear.sh
 openvpn.sh
 ssl.sh
-ssld.sh
 sslmanager.sh
 squid.sh
 errormanager.sh
