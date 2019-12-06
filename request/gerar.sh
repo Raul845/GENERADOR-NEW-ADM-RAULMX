@@ -6,10 +6,19 @@ IVAR="/etc/http-instas"
 system=$(cat /etc/issue.net)
 BARRA="\e[1;33m<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>\e[1;33m"
 echo -e "$BARRA"
-
-              INSTALACIONES :$(cat $IVAR) 
+cat << EOF
 <=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>
-GENERADOR [ NEW-ULTIMATE-ADM-PRO ]
+                        GENERADOR               
+
+            [ NEW-ULTIMATE-ADM-PRO ]          
+
+                    RAUL_FERRAL_MX
+                   VERCION : ORIGINAL
+
+<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>
+              INSTALACIONES :$(cat $IVAR)
+<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>
+            [ NEW-ULTIMATE-ADM-PRO ]
 <=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>
 EOF
 SCPT_DIR="/etc/SCRIPT"
