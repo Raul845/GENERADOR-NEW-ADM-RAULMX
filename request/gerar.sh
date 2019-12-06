@@ -7,11 +7,9 @@ system=$(cat /etc/issue.net)
 BARRA="\e[1;33m<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>\e[1;33m" echo -e "$BARRA"
 cat << EOF
 <=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>
-            GENERADOR               
-
-echo -e "\E[41;1;37m[ NEW-ULTIMATE-ADM-PRO ]$PID_GEN\E[41;1;37m" echo -e "$BARRA"
-
-            RAUL_FERRAL_MX
+                GENERADOR               
+           [ NEW-ULTIMATE-ADM-PRO ]
+             RAUL_FERRAL_MX
             VERCION : ORIGINAL
 
 <=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>
@@ -290,7 +288,7 @@ PID_GEN=$(ps x|grep -v grep|grep "http-server.sh")
 [[ ! $PID_GEN ]] && PID_GEN="\033[1;31moff" || PID_GEN="\033[1;34monline"
 echo -e "\E[44;1;37mCREDITOS: @RAUL_FERRAL_MX\E[44;1;37m"
 echo -e "Directorio \033[1;31m${SCPT_DIR}\033[0m"
-echo -e "\e[1;34mSISTEMA : \Ee1;34m$system"
+echo -e "\e[1;34mSISTEMA : \e[1;34m$system"
 echo -e "$BARRA"
 echo -e "[1] ᗚ •GENERAR 1 KEY ALEATORIA"
 echo -e "[2] ᗚ •APAGAR/O VER KEYS"
