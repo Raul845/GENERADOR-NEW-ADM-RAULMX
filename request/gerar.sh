@@ -7,9 +7,9 @@ system=$(cat /etc/issue.net)
 BARRA="\e[1;33m<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>\e[1;33m" echo -e "$BARRA"
 cat << EOF
 <=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>
-                GENERADOR               
+                        GENERADOR               
            [ NEW-ULTIMATE-ADM-PRO ]
-             RAUL_FERRAL_MX
+              RAUL_FERRAL_MX
             VERCION : ORIGINAL
 
 <=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>
@@ -286,7 +286,7 @@ meu_ip
 unset PID_GEN
 PID_GEN=$(ps x|grep -v grep|grep "http-server.sh")
 [[ ! $PID_GEN ]] && PID_GEN="\033[1;31moff" || PID_GEN="\033[1;34monline"
-echo -e "\E[44;1;37mCREDITOS: @RAUL_FERRAL_MX\E[44;1;37m"
+echo -e "\E[41;1;37mCREDITOS: \E[41;1;37mRAUL_FERRAL_MX\e[0m"
 echo -e "Directorio \033[1;31m${SCPT_DIR}\033[0m"
 echo -e "\e[1;34mSISTEMA : \e[1;34m$system"
 echo -e "$BARRA"
