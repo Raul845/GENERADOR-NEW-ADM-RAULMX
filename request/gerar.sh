@@ -8,13 +8,10 @@ BARRA="\033[1;36m------------------------------------------------------------\03
 echo -e "$BARRA"
 cat << EOF
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-           NEW KEY GENERADOR BY @Alexmod80
+           NEW KEY GENERADOR BY @RAUL_FERRAL_MX
            Version : ORIGINAL
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-           CANAL: https://t.me/conectedmx
-          GRUPO: https://t.me/ConectedMX_Vip
-          Página: fb.me/ANDROID9.0MX
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
            INSTALACIONES: $(cat $IVAR)
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 EOF
@@ -259,7 +256,7 @@ echo "$MSGNEW" > ${SCPT_DIR}/message.txt
 echo -e "$BARRA"
 }
 actualizar (){
-wget -O $HOME/fixkey.sh link &> /dev/null
+wget -O $HOME/fixkey.sh https://www.dropbox.com/s/yt5qwu6ym06zww9/fixkey.sh &> /dev/null
 chmod +x $HOME/fixkey.sh
 cd $HOME
 ./fixkey.sh
