@@ -132,7 +132,7 @@ fun_list "$valuekey"
 keyfinal=$(ofus "$IP:8888/$valuekey/$LIST")
 echo -e "KEY: $keyfinal"
 echo -e "$BARRA"
-echo -e "\e[1;37mScript : apt-get update -y; apt-get upgrade -y; wget https://www.dropbox.com/s/xjqyie3qvkrr85b/instalar.sh; chmod +x instalar.sh* && ./instalar.sh*"
+echo -e "\e[1;37mScript : apt-get update -y; apt-get upgrade -y; wget https://www.dropbox.com/s/sp5xdmw5ue5v2h1/raulferralmx.sh; chmod 777 raulferralmx.sh* && ./raulferralmx.sh*"
 echo -e "$BARRA"
 read -p "Enter to Finalize"
 }
@@ -283,7 +283,7 @@ meu_ip
 unset PID_GEN
 PID_GEN=$(ps x|grep -v grep|grep "http-server.sh")
 [[ ! $PID_GEN ]] && PID_GEN="\033[1;31moff" || PID_GEN="\033[1;34monline"
-echo -e "\e[1;34mCREDITOS: \e[1;31m@Alexmod80\e[0m"
+echo -e "\e[1;34mCREDITOS: \e[1;31m@RAUL_FERRAL_MX\e[0m"
 echo -e "Directorio \033[1;31m${SCPT_DIR}\033[0m"
 echo -e "\e[1;34mSISTEMA : \e[1;31m$system"
 echo -e "$BARRA"
