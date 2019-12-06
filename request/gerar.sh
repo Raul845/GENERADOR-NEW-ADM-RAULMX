@@ -4,7 +4,7 @@ clear
 [[ -e /etc/newadm-instalacao ]] && BASICINST="$(cat /etc/newadm-instalacao)" || BASICINST="menu PGet.py ports.sh ADMbot.sh message.txt usercodes sockspy.sh POpen.py PPriv.py PPub.py PDirect.py speedtest.py speed.sh utils.sh dropbear.sh apacheon.sh openvpn.sh shadowsocks.sh ssl.sh sslmanager.sh squid.sh v2ray.sh vdoray.sh errormanager.sh shadowsock.sh shadown.sh ssrrmu.sh hora.sh htop.sh panelweb.sh Crear-Demo.sh nload.sh insta_painel painel.zip dados.zip"
 IVAR="/etc/http-instas"
 system=$(cat /etc/issue.net)
-BARRA="\033[1;36m------------------------------------------------------------\033[0m"
+BARRA="\e[1;33m<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>\e[1;33m"
 echo -e "$BARRA"
 cat << EOF
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
@@ -287,15 +287,15 @@ echo -e "\e[1;34mCREDITOS: \e[1;31m@RAUL_FERRAL_MX\e[0m"
 echo -e "Directorio \033[1;31m${SCPT_DIR}\033[0m"
 echo -e "\e[1;34mSISTEMA : \e[1;31m$system"
 echo -e "$BARRA"
-echo -e "[1] = GENERAR 1 KEY ALEATORIA"
-echo -e "[2] = APAGAR/O VER KEYS"
-echo -e "[3] = LIMPAR KEYS USADAS"
-echo -e "[4] = ALTERAR ARQUIVOS KEY BASICA"
-echo -e "[5] = START/STOP KEYGEN \e[1;34m$PID_GEN\033[0m"
-echo -e "[6] = VER LOG"
-echo -e "[7] = CAMBIAR MENSAGE"
-echo -e "[8] = ACTUALIZAR"
-echo -e "[0] = SALIR"
+echo -e "[1] ᗚ •GENERAR 1 KEY ALEATORIA"
+echo -e "[2] ᗚ •APAGAR/O VER KEYS"
+echo -e "[3] ᗚ •LIMPAR KEYS USADAS"
+echo -e "[4] ᗚ •ALTERAR ARQUIVOS KEY BASICA"
+echo -e "[5] ᗚ •START/STOP KEYGEN \e[1;34m$PID_GEN\033[0m"
+echo -e "[6] ᗚ •VER LOG"
+echo -e "[7] ᗚ •CAMBIAR MENSAGE"
+echo -e "[8] ᗚ •ACTUALIZAR"
+echo -e "[0] ᗚ •SALIR"
 echo -e "$BARRA"
 while [[ ${varread} != @([0-8]) ]]; do
 read -p "Elija Una Opcion: " varread
