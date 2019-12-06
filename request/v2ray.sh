@@ -47,7 +47,7 @@ fi
  
 install_V2ray () {
 clear
-tput setaf 7 ; tput setab 4 ; tput bold ; printf '%30s%s%-10s\n' "V2ray PANEL OFC BY DANKELHAHER" ; tput sgr0 ; echo ""
+tput setaf 7 ; tput setab 4 ; tput bold ; printf '%30s%s%-10s\n' "V2ray PANEL OFC BY RAUL_FERRAL_MX" ; tput sgr0 ; echo ""
 echo -e "$BARRA1"
 echo -e "${blue}ESTE SCRIPT INSTALARA V2ray PANEL EN SU VPS, ESTO${plain}"
 echo -e "${blue}TOMARA UNOS MINUTOS SEA PACIENTE${plain}"
