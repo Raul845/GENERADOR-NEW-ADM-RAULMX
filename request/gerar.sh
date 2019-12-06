@@ -6,12 +6,10 @@ IVAR="/etc/http-instas"
 system=$(cat /etc/issue.net)
 BARRA="\e[1;33m<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>\e[1;33m"
 echo -e "$BARRA"
-cat << EOF
-<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>
-| lolcat
-figlet VPS_PRO | lolcat
 
-           INSTALACIONES: $(cat $IVAR)
+              INSTALACIONES :$(cat $IVAR) 
+<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>
+GENERADOR [ NEW-ULTIMATE-ADM-PRO ]
 <=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>
 EOF
 SCPT_DIR="/etc/SCRIPT"
@@ -282,9 +280,9 @@ meu_ip
 unset PID_GEN
 PID_GEN=$(ps x|grep -v grep|grep "http-server.sh")
 [[ ! $PID_GEN ]] && PID_GEN="\033[1;31moff" || PID_GEN="\033[1;34monline"
-echo -e "\e[1;34mCREDITOS: \e[1;31m@RAUL_FERRAL_MX\e[0m"
+echo -e "\e[1;34mCREDITOS: \E[44;1;37m@RAUL_FERRAL_MX\E[44;1;37m"
 echo -e "Directorio \033[1;31m${SCPT_DIR}\033[0m"
-echo -e "\e[1;34mSISTEMA : \e[1;31m$system"
+echo -e "\E[41;1;37mSISTEMA : \E[41;1;37m$system"
 echo -e "$BARRA"
 echo -e "[1] ᗚ •GENERAR 1 KEY ALEATORIA"
 echo -e "[2] ᗚ •APAGAR/O VER KEYS"
