@@ -285,19 +285,20 @@ meu_ip
 unset PID_GEN
 PID_GEN=$(ps x|grep -v grep|grep "http-server.sh")
 [[ ! $PID_GEN ]] && PID_GEN="\033[1;31moff" || PID_GEN="\033[1;34monline"
+figlet ADM-PRO | lolcat
 echo -e "\E[41;1;37mCREDITOS: \E[41;1;37mRAUL_FERRAL_MX\e[0m"
 echo -e "Directorio \033[1;31m${SCPT_DIR}\033[0m"
 echo -e "\e[1;34mSISTEMA : \e[1;34m$system"
 echo -e "$BARRA"
-echo -e "[1] ๛ GENERAR 1 KEY ALEATORIA"
-echo -e "[2] ๛ APAGAR/O VER KEYS"
-echo -e "[3] ๛ LIMPIAR KEYS USADAS"
-echo -e "[4] ๛ ALTERAR ARCHIVOS DE KEY BASICA"
-echo -e "[5] ๛ INICIAR/PARAR KEYGEN \033[1;31m$PID_GEN\033[1;31m"
-echo -e "[6] ๛ VER REGISTRO"
-echo -e "[7] ๛ CAMBIAR MENSAGE"
-echo -e "[8] ๛ ACTUALIZADOR"
-echo -e "[0] ๛ SALIR"
+echo -e "[1] ๛GENERAR 1 KEY ALEATORIA"
+echo -e "[2] ๛APAGAR/O VER KEYS"
+echo -e "[3] ๛LIMPIAR KEYS USADAS"
+echo -e "[4] ๛ALTERAR ARCHIVOS DE KEY BASICA"
+echo -e "[5] ๛INICIAR/PARAR KEYGEN \033[1;31m$PID_GEN\033[1;31m"
+echo -e "[6] ๛VER REGISTRO"
+echo -e "[7] ๛CAMBIAR MENSAGE"
+echo -e "[8] ๛ACTUALIZADOR"
+echo -e "[0] ๛SALIR"
 echo -e "$BARRA"
 while [[ ${varread} != @([0-8]) ]]; do
 read -p "Elija Una Opcion: " varread
