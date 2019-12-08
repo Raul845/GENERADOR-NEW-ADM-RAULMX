@@ -1,8 +1,9 @@
 #!/bin/bash
 # Bin _ Gen #OFC
-link_bin="https://www.dropbox.com/s/37psc5yx7060y22/generadorcc.py?dl=0"
+link_bin="https://www.dropbox.com/s/y621pc70hdx93vf/generadorcc.py"
 [[ ! -e /usr/bin/generadorcc.py ]] && wget -O /usr/bin/generadorcc.py ${link_bin} > /dev/null && chmod +x /usr/bin/generadorcc.py
 figlet GENERADOR | lolcat
+echo -e " "
 msg -bar
 msg -ne "$(fun_trans "Digite a bin"): " && read UsrBin
 while [[ ${#UsrBin} -lt 16 ]]; do
