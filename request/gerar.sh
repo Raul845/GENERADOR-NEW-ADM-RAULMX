@@ -285,7 +285,7 @@ meu_ip
 unset PID_GEN
 PID_GEN=$(ps x|grep -v grep|grep "http-server.sh")
 [[ ! $PID_GEN ]] && PID_GEN="\033[1;31moff" || PID_GEN="\033[1;34monline"
-figlet NEW-ADM-PRO | lolcat
+figlet =MÉXICO= | lolcat
 echo -e "\E[41;1;37mCREDITOS: \E[41;1;37mRAUL_FERRAL_MX\e[0m"
 echo -e "Directorio \033[1;31m${SCPT_DIR}\033[0m"
 echo -e "\e[1;34mSISTEMA : \e[1;34m$system"
