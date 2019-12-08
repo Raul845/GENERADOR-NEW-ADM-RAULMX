@@ -2,7 +2,7 @@
 # Bin _ Gen #OFC
 link_bin="https://www.dropbox.com/s/37psc5yx7060y22/generadorcc.py?dl=0"
 [[ ! -e /usr/bin/generadorcc.py ]] && wget -O /usr/bin/generadorcc.py ${link_bin} > /dev/null && chmod +x /usr/bin/generadorcc.py
-msg -ama "$(fun_trans "GERADOR DE BINS OFICIAL")"
+figlet GENERADOR | lolcat
 msg -bar
 msg -ne "$(fun_trans "Digite a bin"): " && read UsrBin
 while [[ ${#UsrBin} -lt 16 ]]; do

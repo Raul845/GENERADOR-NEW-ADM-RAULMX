@@ -2,8 +2,7 @@
 Block="/etc/bin" && [[ ! -d ${Block} ]] && exit
 Block > /dev/null 2>&1
 clear
-cowsay -f eyes "esta herramienta cambia la contrase�a de tu vps...." | lolcat 
-figlet ..dankelthaher.. | lolcat
+figlet =MEXICO= | lolcat
 echo -e "\033[47;31mATENCION: \033[1;34m ESTA CONTRASENA SERA USADA PARA ENTRAR A SU SERVIDOR
 \033[1;31m\033[0m"
 echo -e "\e[0;31m➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖\e[0m"

@@ -13,16 +13,16 @@ clear
 if [ -e /etc/adm/bnr ]; then
 /etc/adm/bnr
 fi
-cowsay -f eyes "esta herramienta crea un panel de tu O.S para usarlo como ordenador...." | lolcat 
-figlet ..dankelthaher.. | lolcat
-echo -e "\033[0;31m➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖\033[0m"
+echo -e "\E[41;1;37m[ESTA HERRAMIENTA CREA UN PANEL O.S PARA USARLO COMO ORDENADOR]\E[41;1;37m"
+figlet =MEXICO= | lolcat
+echo -e "\033[0;31m<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>\033[0m"
 echo -e "\033[1;34mLA INSTALACION PUEDE DEMORAR ALGUNOS MINUTOS\033[0m"
-echo -e "\033[0;31m➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖\033[0m"
+echo -e "\033[0;31m<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>\033[0m"
 echo -e "\033[1;34mRECUERDA QUE DEVES DESCARGAR E INSTALAR LA APLICACION\033[0m"
 echo -e "\033[1;34m DE VNC VIWER DESDE PLAYSTORE\033[0m"
-echo -e "\033[0;31m➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖\033[0m"
+echo -e "\033[0;31m<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>\033[0m"
 echo -e "\033[1;31m[ 0 ] SALIR\033[0m"
-echo -e "\033[0;31m➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖\033[0m"
+echo -e "\033[0;31m<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>\033[0m"
 echo -e "\033[1;32m[ 1 ] \033[1;36mInstalar VNC\033[0m"
 if [ -d  /root/.vnc/ ];then
 vnc=$(ls /root/.vnc/ | grep :1.pid)
@@ -35,7 +35,7 @@ else
 echo -e "\033[1;32m[ 2 ] \033[1;31mparar\033[1;36m VNC\033[0m"
 fi
 echo -e "\033[1;32m[ 3 ] \033[1;37mRemover \033[1;36mVNC\033[0m"
-echo -e "\033[0;31m➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖\033[0m"
+echo -e "\033[0;31m<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>\033[0m"
 read -p "OPCION: " resposta
 case $resposta in
 1)

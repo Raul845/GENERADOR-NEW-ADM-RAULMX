@@ -83,13 +83,13 @@ SEMCOR='\e[0m'
   -azu)cor="${COLOR[6]}${NEGRITO}" && echo -e "${cor}${2}${SEMCOR}";;
   -verd)cor="${COLOR[2]}${NEGRITO}" && echo -e "${cor}${2}${SEMCOR}";;
   -bra)cor="${COLOR[0]}${NEGRITO}" && echo -e "${cor}${2}${SEMCOR}";;
-  "-bar2"|"-bar")cor="\e[1;30m=-=-=-=-=-=-=-==-=-=-=--=-==-=-=-=-=-=-=-==-=-=-=--=-==-=-=-=-=-=-=-=\e[0m" && echo -e "${SEMCOR}${cor}${SEMCOR}";;
+  "-bar2"|"-bar")cor="\e[1;30m<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>\e[0m" && echo -e "${SEMCOR}${cor}${SEMCOR}";;
   -azuc)cor="${COLOR[7]}${NEGRITO}" && echo -e "${cor}${2}${SEMCOR}";;
   -rojoc)cor="${COLOR[8]}${NEGRITO}" && echo -e "${cor}${2}${SEMCOR}";;
 esac
 }
 canbio_color () {
-msg -ama "$(fun_trans "Hola, este es el Administrador de Colores") \033[1;31m[ NEW - ULTIMATE - SCRIPT ]  \033[1;33m[\033[1;34m ANONYMOUS \033[1;33m]"
+msg -ama "$(fun_trans "Hola, este es el Administrador de Colores") \033[1;31m[ NEW-ADM-PRO ]  \033[1;33m[\033[1;34m[RAUL-FERRAL-MX] \033[1;33m]"
 msg -bar2
 msg -ama "$(fun_trans "Selecciona 7 colores"): "
 echo -e '\033[1;37m [1] ###\033[0m'
