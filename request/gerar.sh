@@ -73,7 +73,7 @@ echo -e "[$i] -> ${arqx}"
 arq_list[$i]="${arqx}"
 let i++
 done
-echo -e "[b] -> INSTALACION ADM"
+echo -e "[b] -> INSTALACION NEW-ADM-PRO"
 read -p "Escoja los Archivos que seran agregados: " readvalue
 #CRIA KEY
 [[ ! -e ${DIR}/${KEY} ]] && mkdir ${DIR}/${KEY}
