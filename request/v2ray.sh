@@ -25,7 +25,7 @@ IP="$(meu_ip)"
 Block="/etc/crondbl" && [[ ! -d ${Block} ]] && exit
 Block > /dev/null 2>&1
 BARRA1="\e[1;30m<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>\e[0m"
-BARRA="\e[0;31m--------------------------------------------------------------------\e[0m"
+BARRA="\e[0;31m<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>\e[0m"
 blan='\033[1;37m'
 ama='\033[1;33m'
 blue='\033[1;34m'
@@ -47,9 +47,9 @@ fi
  
 install_V2ray () {
 clear
-tput setaf 7 ; tput setab 4 ; tput bold ; printf '%30s%s%-10s\n' "V2ray PANEL OFC BY RAUL_FERRAL_MX" ; tput sgr0 ; echo ""
+tput setaf 7 ; tput setab 4 ; tput bold ; printf '%30s%s%-10s\n' "V2RAY PANEL OFC BY RAUL_FERRAL_MX" ; tput sgr0 ; echo ""
 echo -e "$BARRA1"
-echo -e "${blue}ESTE SCRIPT INSTALARA V2ray PANEL EN SU VPS, ESTO${plain}"
+echo -e "${blue}ESTE SCRIPT INSTALARA V2RAY PANEL EN SU VPS, ESTO${plain}"
 echo -e "${blue}TOMARA UNOS MINUTOS SEA PACIENTE${plain}"
 echo -e "$BARRA1"
     echo -e "${blan}Presione ENTER para comenzar o presione Ctrl + C para cancelar. Continue!${plain}"
@@ -210,7 +210,7 @@ echo -e "${blan}Acceso al panel: http://$IP:${uport}${plain}"
 echo -e "${blan}O use la direccion de su dominio mas el puerto${plain}"
 echo -e "$BARRA1"
 echo ''
-echo "Gracias por utilizar v2ray OFC BY DANKELTHAHER"
+echo "GRACIAS POR UTILIZAR EL V2RAY RAUL_FERRAL_MX"
  
 #LIMPIAR ARCHIVOS BASURA
 rm -rf /root/config.json
