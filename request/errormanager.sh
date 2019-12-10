@@ -48,7 +48,6 @@ msg -bar
 msg -ama " $(fun_trans "PUERTOS COREGIDAS DROPBEAR")"
 msg -bar
 }
-
 corre_squid () {
 msg -bar
 msg -ama " $(fun_trans "CORRIGIENDO LOS PUERTOS SQUID")"
@@ -79,14 +78,32 @@ msg -bar
 msg -ama " $(fun_trans "LOS PUERTOS SSL SEAN DETENIDO CON EXITO")"
 msg -bar
 }
+corre_squid () {
+msg -bar
+msg -ama " $(fun_trans "CORRIGIENDO EL PUERTO V2RAY")"
+msg -bar
+apt-get remove v2ray -y
+apt-get purge v2ray -y
+rm -rf /etc/v2ray
+msg -bar
+msg -ama " $(fun_trans "ELIMINANDO PUERTO V2RAY")"
+msg -bapt-get remove v2ray -y
+apt-get purge v2ray -y
+rm -rf /etc/v2ray
+msg -bar
+msg -ama " $(fun_trans "PUERTO V2RAY CORREGIDO")"
+msg -bar
+}
 corregir_fun () {
-echo -e " \033[1;36m $(fun_trans "CORREGIR PUERTOS DROPBEAR,SQUID,SSL") \033[1;32m[NEW-ADM]"
+echo -e " \033[1;36m $(fun_trans "[ CORREGIR PUERTOS DROPBEAR,SQUID,SSL Y V2RAY ]"
+echo -e " \033[1;36m $(fun_trans "[ NEW-ADM-PRO-RAUL-FERRAL-MX ]"
 echo -e "$barra"
 while true; do
 echo -e "${cor[4]} [1] > ${cor[5]}$(fun_trans "CORREGIR ERROR DE DROPBEAR")"
 echo -e "${cor[4]} [2] > ${cor[5]}$(fun_trans "CORREGIR ERROR SQUID")"
 echo -e "${cor[4]} [3] > ${cor[5]}$(fun_trans "ELIMINAR PUERTOS SSL")"
-echo -e "${cor[4]} [4] > ${cor[0]}$(fun_trans "SALIR")"
+echo -e "${cor[4]} [4] > ${cor[5]}$(fun_trans "ELIMINAR PUERTO V2RAY")"
+echo -e "${cor[4]} [5] > ${cor[0]}$(fun_trans "SALIR")"
 echo -e "${cor[4]} [0] > ${cor[0]}$(fun_trans "VOLVER")\n${barra}"
 while [[ ${opx} != @(0|[1-4]) ]]; do
 echo -ne "${cor[0]}$(fun_trans "Digite una Opcion"): \033[1;37m" && read opx
@@ -101,10 +118,13 @@ case $opx in
 	2)
 	corre_squid
 	break;;
-    3)
+   3)
 	ssl_del
 	break;;
-    4)
+   4)
+   v2ray_del
+	break;;
+   5)
 	exit;;
   
 esac
