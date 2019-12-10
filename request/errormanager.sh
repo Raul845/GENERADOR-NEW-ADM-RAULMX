@@ -82,7 +82,12 @@ msg -bar
 corregir_fun () {
 echo -e " "
 msg -bar2
-msg -bra "\E[41;1;37m   [ CORREGIDOR DE PUERTOS,DROPBEAR,EQUID YSSL ]   \E[41;1;37m \E[41;1;37m[ ADM-PRO-RAUL-FERRAL-MX]     \E[41;1;37m"
+msg -bra "\E[41;1;37m   [ CORREGIDOR DE PUERTOS,DROPBEAR,EQUID Y SSL ]   \E[41;1;37m" 
+echo -e " "
+msg -bar2
+msg -bra "\E[41;1;37m       [ ADM-PRO-RAUL-FERRAL-MX ]       \E[41;1;37m"
+echo -e " "
+msg -bar2
 echo " $barra"
 while true; do
 echo -e "${cor[4]} [1] > ${cor[5]}$(fun_trans "CORREGIR ERROR DE DROPBEAR")"
