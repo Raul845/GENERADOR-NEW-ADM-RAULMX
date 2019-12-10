@@ -47,6 +47,7 @@ rm -rf /etc/default/dropbear
 msg -bar
 msg -ama " $(fun_trans "PUERTOS COREGIDAS DROPBEAR")"
 msg -bar
+
 }
 corre_squid () {
 msg -bar
@@ -78,7 +79,7 @@ msg -bar
 msg -ama " $(fun_trans "LOS PUERTOS SSL SEAN DETENIDO CON EXITO")"
 msg -bar
 }
-corre_squid () {
+corre_v2ray () {
 msg -bar
 msg -ama " $(fun_trans "CORRIGIENDO EL PUERTO V2RAY")"
 msg -bar
@@ -110,21 +111,21 @@ echo -ne "${cor[0]}$(fun_trans "Digite una Opcion"): \033[1;37m" && read opx
 tput cuu1 && tput dl1
 done
 case $opx in
-	0)
-	menu;;
-	1)
-	elimi_dropbear
-	break;;
-	2)
-	corre_squid
-	break;;
-   3)
-	ssl_del
-	break;;
-   4)
-   v2ray_del
-	break;;
-   5)
+	 0)
+	 menu;;
+	 1)
+	 elimi_dropbear
+	 break;;
+	 2)
+	 corre_squid
+	 break;;
+    3)
+	 ssl_del
+	 break;;
+    4)
+    v2ray_del
+	 break;;
+    5)
 	exit;;
   
 esac
