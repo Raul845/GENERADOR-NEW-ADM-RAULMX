@@ -10,7 +10,7 @@ SCPinst="/etc/ger-inst"
 SCPidioma="${SCPdir}/idioma"
 
 declare -A cor=( [0]="\033[1;37m" [1]="\033[1;34m" [2]="\033[1;35m" [3]="\033[1;32m" [4]="\033[1;31m" [5]="\033[1;33m" [6]="\E[44;1;37m" [7]="\E[41;1;37m" )
-barra="\e[1;33m<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=><=>\e[1;33m"
+barra="\e[1;33m<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>\e[1;33m"
 SCPdir="/etc/newadm" && [[ ! -d ${SCPdir} ]] && exit 1
 SCPfrm="/etc/ger-frm" && [[ ! -d ${SCPfrm} ]] && exit
 SCPinst="/etc/ger-inst" && [[ ! -d ${SCPinst} ]] && exit
@@ -80,8 +80,8 @@ msg -ama " $(fun_trans "LOS PUERTOS SSL SEAN DETENIDO CON EXITO")"
 msg -bar
 }
 corregir_fun () {
-echo -e " "
-msg -bar2
+figlet -f small  CORREGIDOR
+echo -e " 
 msg -bra "\E[41;1;37m  [ CORREGIDOR DE PUERTOS,DROPBEAR,EQUID Y SSL ] \E[41;1;37m" 
 echo -e " "
 msg -bar2
