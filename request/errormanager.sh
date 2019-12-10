@@ -80,7 +80,7 @@ msg -ama " $(fun_trans "LOS PUERTOS SSL SEAN DETENIDO CON EXITO")"
 msg -bar
 }
 corregir_fun () {
-echo -e " \033[1;36m $(fun_trans "CORREGI DOR DE PUERTOS DROPBEAR,SQUID,SSL"
+echo -e " \033[1;36m $(fun_trans "CORREGIR PUERTOS DROPBEAR,SQUID,SSL") \033[1;32m[NEW-ADM]"
 echo -e "$barra"
 while true; do
 echo -e "${cor[4]} [1] > ${cor[5]}$(fun_trans "CORREGIR ERROR DE DROPBEAR")"
