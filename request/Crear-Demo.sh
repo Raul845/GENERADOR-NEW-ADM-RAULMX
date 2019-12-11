@@ -50,6 +50,7 @@ exit" > /tmp/$2
 figlet -f small  NEW=ADM=PRO 
 msg -bar2
 msg -bra "\E[44;1;37m  CREAR USUARIOS POR TIEMPOS O MINUTOS  \E[44;1;37m"
+echo -e "
 msg -bar2
 
 echo -e "\033[1;91m[1]-\033[1;97mNombre del usuario:\033[0;37m"; read -p " " name
