@@ -18,8 +18,8 @@ SEMCOR='\e[0m'
   -verm)cor="${AMARELO}${NEGRITO}[!] ${VERMELHO}" && echo -e "${cor}${2}${SEMCOR}";;
   -azu)cor="${MAG}${NEGRITO}" && echo -e "${cor}${2}${SEMCOR}";;
   -verd)cor="${VERDE}${NEGRITO}" && echo -e "${cor}${2}${SEMCOR}";;
-  -bra)cor="${BRAN}${NEGRITO}" && echo 
- "-bar2"|"-bar")cor="${AZUL}=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>" && echo -e "${SEMCOR}${cor}${SEMCOR}";;
+  -bra)cor="${COLOR[0]}${NEGRITO}" && echo -e "${cor}${2}${SEMCOR}";;
+  "-bar2"|"-bar")cor="\e[1;33m<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>\e[0m" && echo -e "${SEMCOR}${cor}${SEMCOR}";;
  esac
 }
 tmpusr () {
