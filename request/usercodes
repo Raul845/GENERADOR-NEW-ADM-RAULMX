@@ -267,8 +267,7 @@ if [[ -z ${usuarios_ativos[@]} ]]; then
 msg -verm "$(fun_trans "Ningun usuario registrado")"
 msg -bar
 else
-figlet USUARIOS | lolcat
-msg -bra "\E[44;1;37m        USUARIOS ACTIVOS       \E[44;1;37m"
+msg -ama "$(fun_trans "Usuarios actualmente activos en el servidor")"
 msg -bar
 for us in $(echo ${usuarios_ativos[@]}); do
 msg -ne "User: " && echo "${us}"
@@ -348,8 +347,7 @@ msg -verm "$(fun_trans "Ningun usuario registrado")"
 msg -bar
 return 1
 else
-figlet USUARIOS | lolcat
-msg -bra "\E[44;1;37m        USUARIOS ACTIVOS       \E[44;1;37m"
+msg -ama "$(fun_trans "Usuarios actualmente activos en el servidor")"
 msg -bar
 i=0
 for us in $(echo ${usuarios_ativos[@]}); do
@@ -358,8 +356,7 @@ let i++
 done
 msg -bar
 fi
-figlet USUARIOS | lolcat
-msg -bra "\E[44;1;37m        USUARIOS ACTIVOS       \E[44;1;37m"
+msg -ama "$(fun_trans "Escriba o seleccione un usuario")"
 msg -bar
 unset selection
 while [[ -z ${selection} ]]; do
@@ -392,8 +389,7 @@ msg -verm "$(fun_trans "Ningun usuario registrado")"
 msg -bar
 return 1
 else
-figlet USUARIOS | lolcat
-msg -bra "\E[44;1;37m        USUARIOS ACTIVOS       \E[44;1;37m"
+msg -ama "$(fun_trans "Usuarios actualmente activos en el servidor")"
 msg -bar
 i=0
 for us in $(echo ${usuarios_ativos[@]}); do
@@ -451,8 +447,7 @@ msg -verm "$(fun_trans "Ningun usuario registrado")"
 msg -bar
 return 1
 else
-figlet USUARIOS | lolcat
-msg -bra "\E[44;1;37m        USUARIOS ACTIVOS       \E[44;1;37m"
+msg -ama "$(fun_trans "Usuarios Actualmente activos en el servidor")"
 msg -bar
 i=0
 for us in $(echo ${usuarios_ativos[@]}); do
