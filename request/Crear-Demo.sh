@@ -19,7 +19,7 @@ SEMCOR='\e[0m'
   -azu)cor="${MAG}${NEGRITO}" && echo -e "${cor}${2}${SEMCOR}";;
   -verd)cor="${VERDE}${NEGRITO}" && echo -e "${cor}${2}${SEMCOR}";;
   -bra)cor="${BRAN}${NEGRITO}" && echo -ne "${cor}${2}${SEMCOR}";;
-  -bar2)cor="\e[1;33m<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=><=>\e[1;33m" && echo -e "${SEMCOR}${cor}${SEMCOR}";;
+  -bar2)cor="\e[1;33m<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>\e[1;33m" && echo -e "${SEMCOR}${cor}${SEMCOR}";;
  esac
 }
 tmpusr () {
@@ -85,7 +85,7 @@ touch /etc/adm/usuarios/$name
 echo "senha: $pass" >> /etc/adm/usuarios/$name
 echo "data: ($tmp)Minutos" >> /etc/adm/usuarios/$name
 msg -bar2
-echo -e "\033[1;93m     ¡¡Usuario Creado!!\033[0m"
+echo -e "\E[44;1;37m     ¡¡USUARIO CREADO!!\E[44;1;37m"
 msg -bar2
 echo -e "\033[1;36mUsuario: \033[0m$name"
 echo -e "\033[1;36mContraseña: \033[0m$pass"
