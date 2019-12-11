@@ -18,8 +18,8 @@ SEMCOR='\e[0m'
   -verm)cor="${AMARELO}${NEGRITO}[!] ${VERMELHO}" && echo -e "${cor}${2}${SEMCOR}";;
   -azu)cor="${MAG}${NEGRITO}" && echo -e "${cor}${2}${SEMCOR}";;
   -verd)cor="${VERDE}${NEGRITO}" && echo -e "${cor}${2}${SEMCOR}";;
-  -bra)cor="${BRAN}${NEGRITO}" && echo -ne "${cor}${2}${SEMCOR}";;
-  -bar2)cor="\e[1;33m<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>\e[1;33m" && echo -e "${SEMCOR}${cor}${SEMCOR}";;
+  -bra)cor="${BRAN}${NEGRITO}" && echo 
+ "-bar2"|"-bar")cor="${AMARILLO}=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>" && echo -e "${SEMCOR}${cor}${SEMCOR}";;
  esac
 }
 tmpusr () {
@@ -49,8 +49,9 @@ exit" > /tmp/$2
 
 figlet -f small  NEW=ADM=PRO 
 msg -bar2
-msg -bra "\E[44;1;37m  CREAR USUARIOS POR TIEMPOS O MINUTOS  \E[44;1;37m"
-echo -e "\e[1;33m<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>\e[1;33m"
+echo -e "\E[44;1;37m  CREAR USUARIOS POR TIEMPOS O MINUTOS  \033[0m"
+msg -bar2
+
 echo -e "\033[1;91m[1]-\033[1;97mNombre del usuario:\033[0;37m"; read -p " " name
 if [[ -z $name ]]
 then
