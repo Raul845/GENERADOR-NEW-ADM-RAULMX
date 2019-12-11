@@ -1,5 +1,5 @@
 #!/bin/bash
-echo -e "\e[1;33mREDIRECIONADOR DE PUERTO SSL NEWADM\e[0m"
+echo -e "\e[1;33mREDIRECIONADOR DE PUERTO SSL NEW=ADM=PRO\e[0m"
 echo -e "\e[1;41mEscriba El Nombre Para Redireccionar El Puerto SSL\e[0m"
 echo -e "\e[1;36m(ejemplo) shadowsocks,dropbear,sshd,python,obfc,openvpn\e[0m"
 read -p ": " nombressl
