@@ -1,6 +1,6 @@
 #!/bin/bash
 declare -A cor=( [0]="\033[1;37m" [1]="\033[1;34m" [2]="\033[1;31m" [3]="\033[1;33m" [4]="\033[1;32m" )
-barra="\e[1;30m<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>\e[0m"
+barra="\e[1;33m<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>\e[0m"
 SCPfrm="/etc/ger-frm" && [[ ! -d ${SCPfrm} ]] && exit
 SCPinst="/etc/ger-inst" && [[ ! -d ${SCPinst} ]] && exit
 mportas () {
@@ -75,10 +75,13 @@ fun_dropbear () {
  [[ -e /etc/default/dropbear ]] && rm /etc/default/dropbear
  return 0
  }
-echo -e "\033[1;32m $(fun_trans "INSTALADOR DROPBEAR ADM-ULTIMATE")\n$barra"
-echo -e "\033[1;31m $(fun_trans "Seleccione Puertos Válidos en orden secuencial:")\033[1;32m 22 80 81 82 85 90\033[1;37m"
-echo -e "$barra"
-echo -ne "\033[1;31m $(fun_trans "Introduzca el puerto"): \033[1;37m" && read DPORT
+echo -e "\E[41;1;33m INSTALADOR DROPBEAR NEW=ADM=PRO \E[41;1;33m"
+msg -bar2
+echo -e "\E[41;1;33m SELECCIONE LOS PUERTOS\E[41;1;33m
+msg -bar2
+echo -e "\E[41;1;33m     22 80 81 82 85 90     \E[41;1;33m"
+msg -bar2
+echo -e "\E[41;1;33m INTRODUSCA EL PUERTO : \E[41;1;33m" && read DPORT
 tput cuu1 && tput dl1
 TTOTAL=($DPORT)
     for((i=0; i<${#TTOTAL[@]}; i++)); do
