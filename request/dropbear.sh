@@ -75,7 +75,8 @@ fun_dropbear () {
  [[ -e /etc/default/dropbear ]] && rm /etc/default/dropbear
  return 0
  }
-echo -e "\E[41;1;33m   INSTALADOR DROPBEAR NEW=ADM=PRO)\n$barra"
+echo -e "\E[41;1;33m   INSTALADOR DROPBEAR NEW=ADM=PRO   \E[41;1;33m"
+echo -e "$barra"
 echo -e "\033[1;31m $(fun_trans "SELECCIÓNE LOS PUERTOS:")\033[1;32m 22 80 81 82 85 90\033[1;37m"
 echo -e "$barra"
 echo -e "\033[1;31m $(fun_trans "IMTRODUSCA PUERTO"): \033[1;37m" && read DPORT
