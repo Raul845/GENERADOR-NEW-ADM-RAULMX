@@ -1,1 +1,1 @@
-\E[44;1;37mRaul_Ferral_Mx\E[44;1;37m
+\E[41;1;37m[\E[44;1;37mRAUL_FERRAL_MX\E[44;1;37m]\E[41;1;37m]
