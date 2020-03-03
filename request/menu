@@ -713,7 +713,7 @@ _hora=$(printf '%(%H:%M:%S)T')
 # \033[1;31mHORA: \033[1;37m$_hora
 
 msg -bar
-msg -ama "$(fun_trans "MANAGER") \E[41;1;37m[NEW-ADM-PRO]\E[41;1;37m \E[41;1;37m[CHANEI_COBRA_MX]\E[41;1;37m \E[41;1;37m \033[1;31m[\033[1;37m$_hora\033[1;31m] "
+msg -ama "$(fun_trans "MANAGER") \E[41;1;37m[NEW-ADM-PRO]\E[41;1;37m \E[41;1;37m[RAUL_FERRAL_MX]\E[41;1;37m \E[41;1;37m \033[1;31m[\033[1;37m$_hora\033[1;31m] "
 msg -bar
 menu_func "ADMINISTRAR USUARIOS" "HERRAMIENTAS" "MENU DE INSTALACIONES" "-vd ACTUALIZACION" "-vm DESINSTALAR" "-fi $AutoRun INICIO AUTOMATICO" "CAMBIAR IDIOMA" "CAMBIAR COLORES" "-azc WEB PANEL (sshplus)"
 echo -ne "$(msg -verd "[0]") $(msg -verm2 ">") " && msg -bra "$(fun_trans "SALIR DEL SCRIPT")"
