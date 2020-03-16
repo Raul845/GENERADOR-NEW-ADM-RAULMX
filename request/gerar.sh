@@ -7,8 +7,8 @@ system=$(cat /etc/issue.net)
 BARRA="\033[1;33m×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×\033[1;33m"
 echo -e "$BARRA"
 cat << EOF
-           NEW KEY GENERADOR BY RAUl_FERRAl_MX
-              VERCION : ORIGINAL
+            NEW KEY GENERADOR BY  RAUl_FERRAl_MX
+                 VERCION : ORIGINAL
 ×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×
                INSTALACIONES: $(cat $IVAR)
 ×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×
