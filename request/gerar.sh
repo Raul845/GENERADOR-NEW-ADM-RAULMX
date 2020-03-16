@@ -4,18 +4,14 @@ clear
 [[ -e /etc/newadm-instalacao ]] && BASICINST="$(cat /etc/newadm-instalacao)" || BASICINST="menu PGet.py ports.sh ADMbot.sh message.txt usercodes sockspy.sh POpen.py PPriv.py PPub.py PDirect.py speedtest.py speed.sh utils.sh dropbear.sh apacheon.sh openvpn.sh shadowsocks.sh ssl.sh sslmanager.sh squid.sh v2ray.sh vdoray.sh errormanager.sh shadowsock.sh shadown.sh ssrrmu.sh hora.sh htop.sh panelweb.sh Crear-Demo.sh nload.sh insta_painel painel.zip dados.zip"
 IVAR="/etc/http-instas"
 system=$(cat /etc/issue.net)
-BARRA="\033[1;33m<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>\033[1;33m"
+BARRA="\e[1;33m<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=><=>\e[1;33m"
 echo -e "$BARRA"
 cat << EOF
-                  GENERADOR               
-           [ NEW-ULTIMATE-ADM-PRO ]
-               RAUL_FERRAL_MX
-              VERCION : ORIGINAL
-<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>
+figlet GENERADOR | lolcat
+figlet PLUS | lolcat
+<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=><=>
               INSTALACIONES :$(cat $IVAR)
-<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>
-           [ NEW-ULTIMATE-ADM-PRO ]
-<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>
+<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=><=>
 EOF
 SCPT_DIR="/etc/SCRIPT"
 [[ ! -e ${SCPT_DIR} ]] && mkdir ${SCPT_DIR}
@@ -32,7 +28,7 @@ while [[ ${var[$value]} != 0 ]]; do
 [[ -e /etc/newadm-instalacao ]] && BASICINST="$(cat /etc/newadm-instalacao)" || BASICINST="menu PGet.py ports.sh ADMbot.sh message.txt usercodes sockspy.sh POpen.py PPriv.py PPub.py PDirect.py speedtest.py speed.sh utils.sh dropbear.sh apacheon.sh openvpn.sh shadowsocks.sh ssl.sh sslmanager.sh squid.sh v2ray.sh vdoray.sh errormanager.sh shadowsock.sh shadown.sh ssrrmu.sh hora.sh htop.sh panelweb.sh Crear-Demo.sh nload.sh insta_painel painel.zip dados.zip"
 clear
 echo -e $BARRA
-echo -e "MENU SELECION DE INSTALACION"
+echo -e "MENU SELECCIÓN DE INSTALACION"
 echo -e $BARRA
 echo "[0] - FINALIZAR PROCEDIMENTO"
 i=1
@@ -73,8 +69,12 @@ echo -e "[$i] -> ${arqx}"
 arq_list[$i]="${arqx}"
 let i++
 done
-echo -e "[b] -> INSTALACION NEW-ADM-PRO"
-read -p "Escoja los Archivos que seran agregados: " readvalue
+e[1;33m<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=><=>\e[1;33m"
+echo -e "MENU DE GENERADORES DE KEYS"
+e[1;33m<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=><=>"
+echo -e "[b] -> GENERADOR"
+echo -e "\e[1;33m<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=><=>\e[1;33m"
+read -p "TECLE [b]: " readvalue
 #CRIA KEY
 [[ ! -e ${DIR}/${KEY} ]] && mkdir ${DIR}/${KEY}
 #PASSA ARQS
@@ -103,7 +103,7 @@ rm ${SCPT_DIR}/*.x.c &> /dev/null
 echo "$nombrevalue" > ${DIR}/${KEY}.name
 [[ ! -z $IPFIX ]] && echo "$IPFIX" > ${DIR}/${KEY}/keyfixa
 echo -e "$BARRA"
-echo -e "Key Activa, e Aguardando Instalacion!"
+echo -e "Key Activa y Aguardando Instalacion!"
 echo -e "$BARRA"
 }
 ofus () {
@@ -134,7 +134,7 @@ fun_list "$valuekey"
 keyfinal=$(ofus "$IP:8888/$valuekey/$LIST")
 echo -e "KEY: $keyfinal"
 echo -e "$BARRA"
-echo -e "\e[1;37mScript : apt-get update -y; apt-get upgrade -y; wget https://www.dropbox.com/s/sp5xdmw5ue5v2h1/raulferralmx.sh; chmod 777 raulferralmx.sh* && ./raulferralmx.sh*"
+echo -e "\e[1;37mScript : apt-get update -y; apt-get upgrade -y; wget https://www.dropbox.com/s/sp5xdmw5ue5v2h1/raulferralmx.sh && chmod +x *.sh && ./raulferralmx.sh && ./raulferralmx.sh"
 echo -e "$BARRA"
 read -p "Enter to Finalize"
 }
@@ -265,7 +265,7 @@ cd $HOME
 rm $HOME/fixkey.sh &>/dev/null
 }
 rmv_iplib () {
-echo -e "SERVIDORES DE KEY ATIVOS!"
+echo -e "SERVIDORES DE KEY ACTIVOS!"
 rm /var/www/html/newlib && touch /var/www/html/newlib
 rm ${SCPT_DIR}/*.x.c &> /dev/null
 [[ -z $(ls $DIR|grep -v "ERROR-KEY") ]] && return
@@ -284,24 +284,23 @@ read -p "Enter"
 meu_ip
 unset PID_GEN
 PID_GEN=$(ps x|grep -v grep|grep "http-server.sh")
-[[ ! $PID_GEN ]] && PID_GEN="\033[1;31moff" || PID_GEN="\033[1;34monline"
-figlet =MEXICO= | lolcat
-echo -e "\E[41;1;37mCREDITOS: \E[41;1;37mRAUL_FERRAL_MX\e[0m"
-echo -e "Directorio \033[1;31m${SCPT_DIR}\033[0m"
-echo -e "\e[1;34mSISTEMA : \e[1;34m$system"
+[[ ! $PID_GEN ]] && PID_GEN="\033[1;31mAPAGADO" || PID_GEN="\033[1;32mEN LINEA"
 echo -e "$BARRA"
-echo -e "[1] ๛GENERAR 1 KEY ALEATORIA"
-echo -e "[2] ๛APAGAR/O VER KEYS"
-echo -e "[3] ๛LIMPIAR KEYS USADAS"
-echo -e "[4] ๛ALTERAR ARCHIVOS DE KEY BASICA"
-echo -e "[5] ๛INICIAR/PARAR KEY\033[1;31m$PID_GEN\033[1;31m"
-echo -e "[6] ๛VER REGISTRO"
-echo -e "[7] ๛CAMBIAR MENSAGE"
-echo -e "[8] ๛ACTUALIZADOR"
-echo -e "[0] ๛SALIR"
+echo -e "\e[1;33m<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=><=>\e[1;33m"
+echo -e "\E[41;1;37mCREDITOS: \E[41;1;37mRAUL_FERRAL_MX\e[0m"
+echo -e "DIRECTORIO \033[1;31m${SCPT_DIR}\033[0m"
+echo -e "$BARRA"
+echo -e "[1] = $(fun_trans ${id} "GENERAR 1 KEY ALEATORIA")"
+echo -e "[2] = $(fun_trans ${id} "APAGAR O VER  KEYS")"
+echo -e "[3] = $(fun_trans ${id} "INICIAR PARAR") KEYGEN $PID_GEN\033[0m"
+echo -e "[4] = $(fun_trans ${id} "VER LOG")"
+echo -e "[5] = $(fun_trans ${id} "CAMBIAR CREDITOS")"
+echo -e "[6] = $(fun_trans ${id} "ACTUALIZAR KEYS FIJA")"
+echo -e "[7] = $(fun_trans ${id} "ACTUALIZAR GENERADOR")"
+echo -e "[0] = $(fun_trans ${id} "SALIR")"
 echo -e "$BARRA"
 while [[ ${varread} != @([0-8]) ]]; do
-read -p "Elija Una Opcion: " varread
+read -p "Elije Una Opcion: " varread
 done
 echo -e "$BARRA"
 if [[ ${varread} = 0 ]]; then
@@ -318,7 +317,7 @@ elif [[ ${varread} = 5 ]]; then
 start_gen
 elif [[ ${varread} = 6 ]]; then
 echo -ne "\033[1;36m"
-cat /etc/gerar-sh-log 2>/dev/null || echo "NENHUM LOG NO MOMENTO"
+cat /etc/gerar-sh-log 2>/dev/null || echo "NO HAY NADA POR EL MOMENTO"
 echo -ne "\033[0m" && read -p "Enter"
 elif [[ ${varread} = 7 ]]; then
 message_gen
