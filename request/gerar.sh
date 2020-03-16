@@ -7,7 +7,6 @@ system=$(cat /etc/issue.net)
 BARRA="\033[1;33m×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×\033[1;33m"
 echo -e "$BARRA"
 cat << EOF
-×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×
            NEW KEY GENERADOR BY RAUl_FERRAl_MX
               VERCION : ORIGINAL
 ×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×
@@ -282,6 +281,7 @@ meu_ip
 unset PID_GEN
 PID_GEN=$(ps x|grep -v grep|grep "http-server.sh")
 [[ ! $PID_GEN ]] && PID_GEN="\033[1;31mAPAGADO" || PID_GEN="\033[1;34mEN LINEA"
+msg -bar2
 echo -e "\E[41;1;37m               CREDITOS:RAUL_FERRAL_MX Y ALEXMOD80\E[41;1;37m"
 echo -e " "
 echo -e "$BARRA"
