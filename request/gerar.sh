@@ -5,6 +5,7 @@ clear
 IVAR="/etc/http-instas"
 system=$(cat /etc/issue.net)
 BARRA="\033[1;33m×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×\033[1;33m"
+echo -e "$BARRA"
 cat << EOF
            NEW KEY GENERADOR BY RAUl_FERRAl_MX
               VERCION : ORIGINAL
@@ -280,10 +281,10 @@ meu_ip
 unset PID_GEN
 PID_GEN=$(ps x|grep -v grep|grep "http-server.sh")
 [[ ! $PID_GEN ]] && PID_GEN="\033[1;31mAPAGADO" || PID_GEN="\033[1;34mEN LINEA"
-echo -e "\e[1;33mCREDITOS:RAUL_FERRAL_MX Y ALEXMOD80\e[0m"
+echo -e "\e[1;34mCREDITOS:RAUL_FERRAL_MX Y ALEXMOD80\e[0m"
 echo -e "$BARRA"
 echo -e "DIRECTORIO \033[1;33m${SCPT_DIR}\033[0m"
-echo -e "\e[1;34mSISTEMA : \e[1;31m$system"
+echo -e "\e[1;34mSISTEMA : \e[1;34m$system"
 echo -e "$BARRA"
 echo -e "[1] = GENERAR 1 KEY ALEATORIA"
 echo -e "[2] = APAGAR/O VER KEYS"
