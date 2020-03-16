@@ -8,10 +8,10 @@ BARRA="\033[1;33m×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=
 echo -e "$BARRA"
 figlet VPS-PRO | lolcat
 cat << EOF
-echo -e "\e[1;33m×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×
+echo -e "$BARRA"
            NEW KEY GENERADOR BY RAUL_FERRAL_MX
           VERCION : ORIGINAL
-×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×
+echo -e "$BARRA"
            INSTALACIONES: $(cat $IVAR)
 ×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×
 EOF
@@ -283,8 +283,9 @@ meu_ip
 unset PID_GEN
 PID_GEN=$(ps x|grep -v grep|grep "http-server.sh")
 [[ ! $PID_GEN ]] && PID_GEN="\033[1;31mAPAGADO" || PID_GEN="\033[1;34mEN LINEA"
-echo -e "\E[41;1;37mCREDITOS: RAUL_FERRAL_MX\e[0m"
-echo -e "\E[41;1;37m@ALEXMOD80\e[0m"
+echo -e "\E[41;1;37mCREDITOS: RAUL_FERRAL_MX\E[41;1;37m"
+echo -e "\E[41;1;37m@ALEXMOD80\E[41;1;37m"
+echo -e "$BARRA"
 echo -e "DIRECTORIO \033[1;31m${SCPT_DIR}\033[0m"
 echo -e "\e[1;34mSISTEMA : \e[1;31m$system"
 echo -e "$BARRA"
