@@ -5,7 +5,6 @@ clear
 IVAR="/etc/http-instas"
 system=$(cat /etc/issue.net)
 BARRA="\033[1;33m×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×\033[1;33m"
-echo -e "$BARRA"
 cat << EOF
            NEW KEY GENERADOR BY RAUl_FERRAl_MX
               VERCION : ORIGINAL
@@ -281,18 +280,16 @@ meu_ip
 unset PID_GEN
 PID_GEN=$(ps x|grep -v grep|grep "http-server.sh")
 [[ ! $PID_GEN ]] && PID_GEN="\033[1;31mAPAGADO" || PID_GEN="\033[1;34mEN LINEA"
-msg -bar2
-echo -e "\E[41;1;37m               CREDITOS:RAUL_FERRAL_MX Y ALEXMOD80\E[41;1;37m"
-echo -e " "
+echo -e "\e[1;33mCREDITOS:RAUL_FERRAL_MX Y ALEXMOD80\e[0m"
 echo -e "$BARRA"
-echo -e "DIRECTORIO \033[1;31m${SCPT_DIR}\033[0m"
+echo -e "DIRECTORIO \033[1;33m${SCPT_DIR}\033[0m"
 echo -e "\e[1;34mSISTEMA : \e[1;31m$system"
 echo -e "$BARRA"
 echo -e "[1] = GENERAR 1 KEY ALEATORIA"
 echo -e "[2] = APAGAR/O VER KEYS"
 echo -e "[3] = LIMPAR KEYS USADAS"
 echo -e "[4] = ALTERAR ARCHIVOS DE KEY BASICA"
-echo -e "[5] = PRENDER/APAGAR KEY \e[1;34m$PID_GEN\033[0m"
+echo -e "[5] = PRENDER/APAGAR KEY \e[1;33m$PID_GEN\033[0m"
 echo -e "[6] = INSTALADOR VPS-PRO"
 echo -e "[7] = CAMBIAR CRÉDITOS"
 echo -e "[8] = ACTUALIZAR GENERADOR"
