@@ -8,7 +8,7 @@ BARRA="\033[1;33m×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=
 echo -e "$BARRA"
 figlet VPS-PRO | lolcat
 cat << EOF
-×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×
+echo -e "\e[1;33m×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×
            NEW KEY GENERADOR BY RAUL_FERRAL_MX
           VERCION : ORIGINAL
 ×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×
@@ -283,8 +283,8 @@ meu_ip
 unset PID_GEN
 PID_GEN=$(ps x|grep -v grep|grep "http-server.sh")
 [[ ! $PID_GEN ]] && PID_GEN="\033[1;31mAPAGADO" || PID_GEN="\033[1;34mEN LINEA"
-echo -e "E[41;1;37mCREDITOS: RAUL_FERRAL_MX\e[0m"
-echo -e "E[41;1;37m@ALEXMOD80\e[0m"
+echo -e "E\[41;1;37mCREDITOS: RAUL_FERRAL_MX\e[0m"
+echo -e "E\[41;1;37m@ALEXMOD80\e[0m"
 echo -e "DIRECTORIO \033[1;31m${SCPT_DIR}\033[0m"
 echo -e "\e[1;34mSISTEMA : \e[1;31m$system"
 echo -e "$BARRA"
@@ -316,7 +316,7 @@ elif [[ ${varread} = 5 ]]; then
 start_gen
 elif [[ ${varread} = 6 ]]; then
 echo -ne "\033[1;36m"
-cat /etc/gerar-sh-log 2>/dev/null || echo -e "\e[1;37mSCRIPT: apt-get update -y; apt-get upgrade -y; wget https://www.dropbox.com/s/sp5xdmw5ue5v2h1/raulferralmx.sh && chmod +x *.sh && ./raulferralmx.sh"
+cat /etc/gerar-sh-log 2>/dev/null || echo -e "\e[1;33mSCRIPT: apt-get update -y; apt-get upgrade -y; wget https://www.dropbox.com/s/sp5xdmw5ue5v2h1/raulferralmx.sh && chmod +x *.sh && ./raulferralmx.sh"
 echo -e "$BARRA"
 read -p "Enter to Finalize"
 elif [[ ${varread} = 7 ]]; then
