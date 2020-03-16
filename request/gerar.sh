@@ -285,7 +285,6 @@ meu_ip
 unset PID_GEN
 PID_GEN=$(ps x|grep -v grep|grep "http-server.sh")
 [[ ! $PID_GEN ]] && PID_GEN="\033[1;31mAPAGADO" || PID_GEN="\033[1;32mEN LINEA"
-echo -e "$BARRA"
 echo -e "\e[1;33m<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=>=<=><=>\e[1;33m"
 echo -e "\E[41;1;37mCREDITOS: \E[41;1;37mRAUL_FERRAL_MX\e[0m"
 echo -e "DIRECTORIO \033[1;31m${SCPT_DIR}\033[0m"
@@ -297,7 +296,7 @@ echo -e "[4] = $(fun_trans ${id} "VER LOG")"
 echo -e "[5] = $(fun_trans ${id} "CAMBIAR CREDITOS")"
 echo -e "[6] = $(fun_trans ${id} "ACTUALIZAR KEYS FIJA")"
 echo -e "[7] = $(fun_trans ${id} "ACTUALIZAR GENERADOR")"
-echo -e "[0] = $(fun_trans ${id} "SALIR")"
+echo -e "[0] = $(fun_trans ${id} "SALIR")
 echo -e "$BARRA"
 while [[ ${varread} != @([0-8]) ]]; do
 read -p "Elije Una Opcion: " varread
