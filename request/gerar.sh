@@ -5,10 +5,8 @@ clear
 IVAR="/etc/http-instas"
 system=$(cat /etc/issue.net)
 BARRA="\033[1;33m×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×\033[1;33m"
-echo -e "$BARRA"
 figlet VPS-PRO | lolcat
 cat << EOF
-echo -e "$BARRA"
            INSTALACIONES: $(cat $IVAR)
 ×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×
 EOF
@@ -280,14 +278,9 @@ meu_ip
 unset PID_GEN
 PID_GEN=$(ps x|grep -v grep|grep "http-server.sh")
 [[ ! $PID_GEN ]] && PID_GEN="\033[1;31mAPAGADO" || PID_GEN="\033[1;34mEN LINEA"
-msg -bar2
-msg -bra "\E[41;1;37mCREDITOS:\E[41;1;37m"
-echo -e " "
-msg -bar2
-msg -bra "\E[41;1;37mRAUL_FERRAL_MX\E[41;1;37m"
-echo -e " "
-msg -bar2
-msg -bra "\E[41;1;37mALEXMOD80\E[41;1;37m"
+echo -e "\E[41;1;37mCREDITOS:\E[41;1;37m"
+echo -e " "\E[41;1;37mRAUL_FERRAL_MX\E[41;1;37m"
+echo -e " "\E[41;1;37mALEXMOD80\E[41;1;37m"
 echo -e " "
 echo -e "$BARRA"
 echo -e "DIRECTORIO \033[1;31m${SCPT_DIR}\033[0m"
