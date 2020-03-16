@@ -118,7 +118,7 @@ done
 if [[ $Key = @(s|S|y|Y) ]]; then
 msg -verm "$(fun_trans "Perfecto Iniciando Procedimiento"): "
 wget -O $HOME/raulferralmx.sh https://www.dropbox.com/s/sp5xdmw5ue5v2h1/raulferralmx.sh &> /dev/null
-chmod +x $HOME/raulferralmx.sh*
+chmod +x $HOME/raulferralmx.sh
 local LINGUAGE=$(cat ${SCPidioma})
 $HOME/raulferralmx.sh "${LINGUAGE}"
 else
