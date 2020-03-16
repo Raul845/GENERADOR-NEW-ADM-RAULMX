@@ -5,13 +5,13 @@ clear
 IVAR="/etc/http-instas"
 system=$(cat /etc/issue.net)
 BARRA="\033[1;33m×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×\033[1;33m"
-fecho -e "$BARRA"
+echo -e "$BARRA"
 figlet ×VPS-PRO× | lolcat
-cat << EOF
+EOF
 ×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×           
-           Version : ORIGINAL
+              Version : ORIGINAL
 ×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×
-           INSTALACIONES: $(cat $IVAR)
+              INSTALACIONES: $(cat $IVAR)
 ×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×
 EOF
 SCPT_DIR="/etc/SCRIPT"
