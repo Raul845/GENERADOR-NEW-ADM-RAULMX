@@ -17,7 +17,7 @@ SCPT_DIR="/etc/SCRIPT"
 [[ ! -e ${SCPT_DIR} ]] && mkdir ${SCPT_DIR}
 INSTA_ARQUIVOS="ADMVPS.zip"
 DIR="/etc/http-shell"
-LIST="08domxelA"
+LIST="xM_larreF_luaR"
 meu_ip () {
 MIP=$(ip addr | grep 'inet' | grep -v inet6 | grep -vE '127\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -o -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | head -1)
 MIP2=$(wget -qO- ipv4.icanhazip.com)
