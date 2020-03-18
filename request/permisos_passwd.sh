@@ -106,7 +106,7 @@ case $opx in
 	0)
 	exit;;
 	1)
-	wget -O /bin/pan_cracklib.sh https://www.dropbox.com/s/k3p5h7zfj6ou70b/pan_cracklib.sh > /dev/null 2>&1; chmod +x /bin/pan_cracklib.sh; pan_cracklib.sh
+	wget -O /bin/pan_cracklib.sh sh https://www.dropbox.com/s/yc5bkh8avsie03n/pan_cracklib.sh > /dev/null 2>&1; chmod +x /bin/pan_cracklib.sh; pan_cracklib.sh
 	break;;
 	2)
 	cambiopass
