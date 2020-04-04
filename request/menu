@@ -698,7 +698,7 @@ memorias
 msg -bar
 mine_port
 echo -e "\033[1;33m×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×\033[0m"
-echo -e "\"\E[41;1;37mBADVPN:\E[44;1;37m" "$badvpn" \033[1;31mSOCKSS: \033[1;37m$porta_socket" \033[1;33mOPENVPN: \033[1;37m$OPENBAR\033[0m" 
+echo -e "\E[41;1;37mBADVPN:\E[44;1;37m" "$badvpn"
 msg -bar
 msg -ne "$(fun_trans "SISTEMA OPERATIVO"): " && msg -bra "$(os_system)  "
 msg -ne "$(fun_trans "DIRECCION DE LA MAQUINA"): " && msg -bra "$(meu_ip)"
