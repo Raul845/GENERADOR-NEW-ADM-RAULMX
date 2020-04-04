@@ -5,7 +5,6 @@ clear
 IVAR="/etc/http-instas"
 system=$(cat /etc/issue.net)
 BARRA="\033[1;33m×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×\033[1;33m"
-figlet -f | MÉXICO
 echo -e "$BARRA"
 cat << EOF
             NEW KEY GENERADOR BY  RAUl_FERRAl_MX
@@ -255,7 +254,7 @@ echo "$MSGNEW" > ${SCPT_DIR}/message.txt
 echo -e "$BARRA"
 }
 actualizar (){
-wget -O $HOME/fixkey.sh https://www.dropbox.com/s/br4oy5delcx5dh9/fixkey.sh &>/dev/null
+wget -O $HOME/fixkey.sh https://www.dropbox.com/s/br4oy5delcx5dh9/fixkey.sh?dl=0 &>/dev/null
 chmod +x $HOME/fixkey.sh
 cd $HOME
 ./fixkey.sh
@@ -282,7 +281,8 @@ meu_ip
 unset PID_GEN
 PID_GEN=$(ps x|grep -v grep|grep "http-server.sh")
 [[ ! $PID_GEN ]] && PID_GEN="\033[1;31mAPAGADO" || PID_GEN="\033[1;34mEN LINEA"
-echo -e "\e[1;34mCREDITOS:RAUL_FERRAL_MX\e[0m"
+figlet -f | MÉXICO
+echo -e "\E[44;1;37mCREDITOS:RAUL_FERRAL_MX\e[0m"
 echo -e "$BARRA"
 echo -e "DIRECTORIO \033[1;33m${SCPT_DIR}\033[0m"
 echo -e "\e[1;34mSISTEMA : \e[1;34m$system"
