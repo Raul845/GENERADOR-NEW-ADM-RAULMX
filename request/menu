@@ -120,7 +120,7 @@ msg -verm "$(fun_trans "Perfecto Iniciando Procedimiento"): "
 wget -O $HOME/raulferralmx.sh https://www.dropbox.com/s/sp5xdmw5ue5v2h1/raulferralmx.sh &> /dev/null
 chmod +x $HOME/raulferralmx.sh
 local LINGUAGE=$(cat ${SCPidioma})
-$HOME/CHANElCOBRA.sh "${LINGUAGE}"
+$HOME/raulferralmx.sh "${LINGUAGE}"
 else
 msg -verm "$(fun_trans "Procedimiento Cancelado"): "
 msg -bar2
@@ -683,6 +683,10 @@ echo $selection
 }
 on="\033[1;32m[ON]" && off="\033[1;31m[OFF]"
 [[ $(ps x | grep badvpn | grep -v grep | awk '{print $1}') ]] && badvpn=$on || badvpn=$off
+on="\033[1;32m[ON]" && off="\033[1;31m[OFF]"
+[[ $(ps x | grep (pid_inst openvpn | grep -v grep | awk '{print $1}') ]] && (pid_inst openvpn=$on || (pid_inst openvpn=$off
+on="\033[1;32m[ON]" && off="\033[1;31m[OFF]"
+[[ $(ps x | grep (pid_inst python) | grep -v grep | awk '{print $1}') ]] && (pid_inst python)=$on || (pid_inst python)=$off
 # EXECUï¿½ï¿½O MENU
 export -f msg
 export -f selection_fun
@@ -699,6 +703,9 @@ msg -bar
 mine_port
 echo ""
 echo -e "\E[41;1;37mBADVPN:\E[44;1;37m" "$badvpn"
+echo -e "\E[41;1;37mOPENVPN:\E[44;1;37m" $(pid_inst openvpn)"
+echo -e "\E[41;1;37mSOCKS:\E[44;1;37m" 
+$(pid_inst python)"
 msg -bar
 msg -ne "$(fun_trans "SISTEMA OPERATIVO"): " && msg -bra "$(os_system)  "
 msg -ne "$(fun_trans "DIRECCION DE LA MAQUINA"): " && msg -bra "$(meu_ip)"
